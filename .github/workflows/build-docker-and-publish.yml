@@ -23,7 +23,7 @@ jobs:
           images: |
             semanticexperts/node-chromium
           tags: |
-            type=raw,value=$VERSION_NUMBER
+            type=raw,value=${{env.VERSION_NUMBER}}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -45,4 +45,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            DOCKER_BUILD_NODE_VERSION=$VERSION_NUMBER
+            DOCKER_BUILD_NODE_VERSION=${{env.VERSION_NUMBER}}
