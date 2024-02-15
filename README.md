@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/SemanticExperts/docker-node-chromium/releases"><img src="https://img.shields.io/github/v/release/SemanticExperts/docker-node-chromium" alt="release"></a>
-  <a href="https://hub.docker.com/r/semanticexperts/node-chromium"><img src="https://img.shields.io/docker/v/semanticexperts/node-chromium/latest?label=Docker%20version" alt="Docker version"></a>
+  <a href="https://hub.docker.com/r/semanticexperts/node-chromium"><img src="https://img.shields.io/docker/v/semanticexperts/node-chromium?label=Docker%20version" alt="Docker version"></a>
   <a href="https://github.com/SemanticExperts/docker-node-chromium/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SemanticExperts/docker-node-chromium" alt="licence"></a>
 </p>
 
