@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      VERSION_NUMBER: ${{ github.ref_name }}
 
     steps:
       - uses: actions/checkout@v4
@@ -21,7 +23,7 @@ jobs:
           images: |
             semanticexperts/node-chromium
           tags: |
-            type=ref,event=branch
+            type=raw,value=$VERSION_NUMBER
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
