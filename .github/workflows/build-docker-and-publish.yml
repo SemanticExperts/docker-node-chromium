@@ -44,3 +44,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            DOCKER_BUILD_NODE_VERSION=$VERSION_NUMBER
